@@ -16,6 +16,12 @@ const Header = () => {
         <li>
           <Link href="/contact">Contact</Link>
         </li>
+        <li>
+          <Link href="/singlePost">Single Post</Link>
+        </li>
+        <li>
+          <Link href="/Errors">Error</Link>
+        </li>
       </ul>
       <input
         type="text"
