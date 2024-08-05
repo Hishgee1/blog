@@ -9,7 +9,7 @@ const AboutContent = () => {
       transition={{ duration: 0.5 }}
       className="flex mt-12"
     >
-      <div className="flex-1">
+      <div className="flex">
         <img
           src="/path/to/your/photo.jpg"
           alt="Your Photo"
