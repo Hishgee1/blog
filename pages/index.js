@@ -1,14 +1,17 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
-     <div className="{styles.container}">My blog</div>
+    
+      <main className="  bg-white w-3/5 m-auto ">
+        <div className=" ">
+        <img className="h-[500px]" src="/images/4394e91108e011b0d07581596959713b.jpeg"  alt="img"/>
+        </div>
+       
+      </main>
+   
     </>
   );
 }
