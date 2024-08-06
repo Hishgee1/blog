@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#haha1{
+    font-size: 72px;
+}
+
+#font{
+    font-size: 24px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 1);
+    ;
+}
+
+#con{
+    font-size: 36px;
+}
