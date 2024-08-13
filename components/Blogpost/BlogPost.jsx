@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import postCard from "./blogPostCard";
+import { SearchContext } from "@/pages/provider/search-provider";
 
 export default function Example() {
+  const {searchValue} = useContext(SearchContext)
+  const filteredCard = postCard.filter((card) =>
+  card?.name.includes(searchValue))
   return (
     <div className="w-[1216px] m-auto mt-20 ">
       <div className="flex flex-col gap-16 mb-10">
@@ -14,12 +19,13 @@ export default function Example() {
             <li>Technology</li>
             <li>Branding</li>
           </ul>
+        
           <p>View All</p>
         </div>
       </div>
 
       <div className=" grid grid-cols-3 grid-rows-3 gap-4  ">
-        {postCard.map((cardm) => (
+        {filteredCard.map((cardm) => (
           <div key={cardm.id} className="p-4 border rounded-xl">
             <img
               className="h-[240px] w-[360px] m-auto rounded-xl brightness-[1 object-cover"
